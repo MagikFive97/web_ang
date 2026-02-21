@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Restaurante Angelín · menú con subnavegación</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!-- HEADER -->
+<header class="header">
+    <div class="container header-container">
+        <div class="logo">
+            <a href="#inicio">
+                <div class="logo-img"><i class="fas fa-utensils"></i></div>
+                <span>BAR RESTAURANTE ANGELÍN</span>
+            </a>
+        </div>
+        <nav class="nav-menu">
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#cocina">Cocina</a></li>
+                <li><a href="#menu-completo">Menú</a></li>
+                <li><a href="#celebraciones">Celebraciones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-acciones">
+            <a href="tel:965700878" class="telefono-header"><i class="fas fa-phone-alt"></i> 965 55 51 11</a>
+            <a href="#reserva" class="btn-reservar-header">Reservar</a>
+            <button class="menu-hamburguesa"><i class="fas fa-bars"></i></button>
+        </div>
+    </div>
+</header>
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+    <div class="hero-contenido">
+        <span class="hero-antetitulo">Desde 1975 en Almoradí</span>
+        <h1 class="hero-titulo">51 años cocinando <span>con el corazón</span></h1>
+        <p class="hero-subtitulo">El sabor de siempre, para los momentos que importan</p>
+        <div class="hero-botones">
+            <a href="#reserva" class="btn btn-primario">Reservar por teléfono</a>
+            <a href="#menu-completo" class="btn btn-secundario">Ver Menú</a>
+        </div>
+    </div>
+</section>
+
+<!-- ATMÓSFERA -->
+<section class="atmosfera">
+    <div class="container">
+        <div class="atmosfera-grid">
+            <div class="atmosfera-item"><img src="images/platos (12).jpeg" alt="terraza"><div class="atmosfera-overlay"><h3>Terraza acogedora</h3></div></div>
+            <div class="atmosfera-item"><img src="images/salon_angelin.jpg" alt="familia"><div class="atmosfera-overlay"><h3>Cocina de familia</h3></div></div>
+            <div class="atmosfera-item"><img src="images/platos (15).jpeg" alt="comedor"><div class="atmosfera-overlay"><h3>Ambiente tradicional</h3></div></div>
+        </div>
+        <p class="atmosfera-frase">"Un hogar lejos de casa, donde la buena mesa y la compañía se encuentran"</p>
+    </div>
+</section>
+
+<!-- HISTORIA -->
+<section id="historia" class="historia">
+    <div class="container">
+        <div class="historia-grid">
+            <div class="historia-contenido">
+                <span class="seccion-subtitulo">Nuestra historia</span>
+                <h2 class="seccion-titulo">MÁS DE 51 años DE TRADICIÓN</h2>
+                <p>Desde 1975, la familia Angelín abre sus puertas en Almoradí con un solo objetivo: ofrecer la mejor cocina casera de la región. Producto fresco de la huerta y el mar, recetas transmitidas y un servicio familiar.</p>
+                <h2 class="seccion-titulo">NUESTROS ORÍGENES: 1965</h2>
+                <p>Nuestra historia comenzó en 1965 como una pequeña tienda de comestibles, granos y vinos. Con esfuerzo y dedicación, nos convertimos en un comercio de confianza para el barrio, ofreciendo productos seleccionados y atención personalizada. Ese espíritu de cercanía y compromiso con la calidad sigue siendo, hoy en día, la base de todo lo que hacemos.</p>
+                
+                <div class="historia-datos">
+                </div>
+            </div>
+            <div class="historia-imagen"><img src="images/blancoynegro.png" alt="familia"></div>
+        </div>
+    </div>
+</section>
+
+<!-- COCINA (origen) -->
+<section id="cocina" class="cocina">
+    <div class="container">
+        <div style="text-align:center">
+            <span class="seccion-subtitulo">Nuestra cocina</span>
+            <h2 class="seccion-titulo">EL ORIGEN DEL SABOR</h2>
+        </div>
+        <div class="cocina-grid">
+            <div class="cocina-card"><div class="cocina-icono"><img class="cocina-imagen" src="images/paella.jpeg" alt="Arroz"></div><h3>Arroces de la Vega</h3><p>Melosos y socarrados, a la leña.</p></div>
+            <div class="cocina-card"><div class="cocina-icono"><img class="cocina-imagen" src="images/alcachofareco2.png" alt="alcachofas"></div><h3>Alcachofas</h3><p>Tesoro de temporada.</p></div>
+            <div class="cocina-card"><div class="cocina-icono"><img class="cocina-imagen" src="images/platos (5).jpeg" alt="pescado"></div><h3>Pescados</h3><p>Frescura del Mediterráneo.</p></div>
+            <div class="cocina-card"><div class="cocina-icono"><img class="cocina-imagen" src="images/platos (4).jpeg" alt="carne"></div><h3>Carnes a la brasa</h3><p>Sabor tradicional.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- MENÚ COMPLETO CON SUBNAVEGACIÓN -->
+<section id="menu-completo" class="menu-completo">
+    <div class="container">
+        <span class="seccion-subtitulo" style="text-align:center; display:block;">Nuestra carta</span>
+        <h2 class="seccion-titulo" style="text-align:center;">MENÚ DEL RESTAURANTE</h2>
+        
+        <!-- SUBMENÚ DE CATEGORÍAS (sticky) -->
+        <div class="submenu-carta">
+            <div class="container submenu-contenedor">
+                <a href="#entrantes" class="submenu-link">Entrantes</a>
+                <a href="#arroces" class="submenu-link">Arroces</a>
+                <a href="#pescados" class="submenu-link">Pescados</a>
+                <a href="#carnes" class="submenu-link">Carnes</a>
+                <a href="#postres" class="submenu-link">Postres</a>
+            </div>
+        </div>
+
+        <!-- CATEGORÍAS (con id para enlazar) -->
+        <div id="entrantes" class="carta-categoria">
+            <h3 class="carta-titulo">PARA EMPEZAR</h3>
+            <div class="plato-lista">
+                <div><div class="plato-item"><span class="plato-nombre">Jamón ibérico de bellota</span><span class="plato-precio">24,90€</span></div><div class="plato-desc">100% ibérico, cortado a cuchillo</div></div>
+                <div><div class="plato-item"><span class="plato-nombre">Queso manchego curado</span><span class="plato-precio">16,50€</span></div><div class="plato-desc">con membrillo y nueces</div></div>
+                <div><div class="plato-item"><span class="plato-nombre">Ensalada Angelín</span><span class="plato-precio">14,90€</span></div><div class="plato-desc">lechuga, tomate, ventresca, huevo, olivas</div></div>
+                <div><div class="plato-item"><span class="plato-nombre">Pulpo a la gallega</span><span class="plato-precio">18,90€</span></div><div class="plato-desc">con pimentón de la Vera</div></div>
+            </div>
+        </div>
+
+        <div id="arroces" class="carta-categoria">
+            <h3 class="carta-titulo">ARROCES Y GUISOS</h3>
+            <div class="plato-lista">
+                <div><div class="plato-item"><span class="plato-nombre">Arroz a banda</span><span class="plato-precio">22,50€</span></div><div class="plato-desc">con alioli</div></div>
+                <div><div class="plato-item"><span class="plato-nombre">Paella valenciana</span><span class="plato-precio">21,50€</span></div><div class="plato-desc">pollo, conejo, judía, garrofón</div></div>
+                <div><div class="plato-item"><span class="plato-nombre">Arroz con costra</span><span class="plato-precio">23,00€</span></div><div class="plato-desc">típico alicantino</div></div>
+                <div><div class="plato-item"><span class="plato-nombre">Lentejas caseras</span><span class="plato-precio">12,50€</span></div><div class="plato-desc">con chorizo y verdura</div></div>
+            </div>
+        </div>
+
+        <div id="pescados" class="carta-categoria">
+            <h3 class="carta-titulo">PESCADOS Y MARISCOS</h3>
+            <div class="plato-lista">
+                <div><div class="plato-item"><span class="plato-nombre">Dorada a la sal</span><span class="plato-precio">28,00€</span></div><div class="plato-desc">ración para dos</div></div>
+                <div><div class="plato-item"><span class="plato-nombre">Sepia a la plancha</span><span class="plato-precio">19,50€</span></div><div class="plato-desc">con aliño</div></div>
+                <div><div class="plato-item"><span class="plato-nombre">Caldero del pescador</span><span class="plato-precio">26,00€</span></div><div class="plato-desc">arroz caldoso con rape y gambas</div></div>
+            </div>
+        </div>
+
+        <div id="carnes" class="carta-categoria">
+            <h3 class="carta-titulo">CARNES</h3>
+            <div class="plato-lista">
+                <div><div class="plato-item"><span class="plato-nombre">Entrecot de ternera</span><span class="plato-precio">22,50€</span></div><div class="plato-desc">a la parrilla con guarnición</div></div>
+                <div><div class="plato-item"><span class="plato-nombre">Chuletillas de cordero</span><span class="plato-precio">24,00€</span></div><div class="plato-desc">lechal, al romero</div></div>
+                <div><div class="plato-item"><span class="plato-nombre">Solomillo al whiskey</span><span class="plato-precio">26,50€</span></div><div class="plato-desc">con salsa de la casa</div></div>
+            </div>
+        </div>
+
+        <div id="postres" class="carta-categoria">
+            <h3 class="carta-titulo">POSTRES CASEROS</h3>
+            <div class="plato-lista">
+                <div><div class="plato-item"><span class="plato-nombre">Leche frita</span><span class="plato-precio">6,50€</span></div><div class="plato-desc">canela y azúcar</div></div>
+                <div><div class="plato-item"><span class="plato-nombre">Tiramisú</span><span class="plato-precio">6,90€</span></div><div class="plato-desc">receta italiana</div></div>
+                <div><div class="plato-item"><span class="plato-nombre">Arroz con leche</span><span class="plato-precio">5,90€</span></div><div class="plato-desc">quemado</div></div>
+            </div>
+        </div>
+        <div>
+            <a href="https://smartmenu.agorapos.com/?id=7ppprkl5#/"><button class="btn bcarta :hover"> - Nuestra  Carta -</button></a>
+            <p class="nota-carta">* Todos los precios IVA incluido. Consulta nuestros menús del día y menús para grupos.</p>
+        </div>
+        
+        
+    </div>
+</section>
+
+<!-- CELEBRACIONES -->
+<section id="celebraciones" class="celebraciones">
+    <div class="container">
+        <div class="celebraciones-grid">
+            <div class="celebraciones-imagen"><img src="https://placecats.com/600/400?random=5" alt="evento"></div>
+            <div class="celebraciones-contenido">
+                <span class="seccion-subtitulo">Eventos y grupos</span>
+                <h2 class="seccion-titulo">EL LUGAR PARA CELEBRAR</h2>
+                <p>¿Una comida de empresa, una comunión o reunión familiar? Angelín es tu casa.</p>
+                <ul class="celebraciones-lista">
+                    <li><i class="fas fa-check-circle"></i> Parking gratuito</li>
+                    <li><i class="fas fa-check-circle"></i> Zona infantil</li>
+                    <li><i class="fas fa-check-circle"></i> Acceso adaptado</li>
+                </ul>
+                <a href="#contacto" class="btn btn-primario">Consultar disponibilidad</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="testimonios">
+    <div class="container">
+        <div style="text-align:center">
+            <span class="seccion-subtitulo">Lo que dicen</span>
+            <h2 class="seccion-titulo">LA VOZ DE NUESTROS CLIENTES</h2>
+        </div>
+        <div class="testimonios-grid">
+            <div class="testimonio-card"><div class="testimonio-estrellas">★★★★★</div><p>"El servicio inmejorable, la leche frita espectacular."</p><strong>María G.</strong></div>
+            <div class="testimonio-card"><div class="testimonio-estrellas">★★★★★</div><p>"Un clásico en Almoradí, el arroz siempre perfecto."</p><strong>Carlos R.</strong></div>
+            <div class="testimonio-card"><div class="testimonio-estrellas">★★★★½</div><p>"Cenamos de lujo, el entrecot de 10."</p><strong>Ana L.</strong></div>
+        </div>
+        <div class="testimonios-puntuacion">
+            <span><span class="dato-numero">4.2</span>/5 Google</span>
+            <span><span class="dato-numero">3.8</span>/5 TripAdvisor</span>
+        </div>
+    </div>
+</section>
+
+<!-- GALERÍA (breve) -->
+<section class="galeria" style="padding: 0 0 50px">
+    <div class="galeria-grid">
+        <div class="galeria-item" style="background:#bbb;"></div>
+        <div class="galeria-item" style="background:#aaa;"></div>
+        <div class="galeria-item" style="background:#999;"></div>
+        <div class="galeria-item" style="background:#888;"></div>
+        <div class="galeria-item" style="background:#777;"></div>
+        <div class="galeria-item" style="background:#868686;"></div>
+    </div>
+</section>
+
+<!-- RESERVA (SOLO TELÉFONO) -->
+<section id="reserva" class="reserva">
+    <div class="container">
+        <div class="reserva-contenedor">
+            <span class="seccion-subtitulo">Reservas</span>
+            <h2 class="seccion-titulo" style="margin-bottom:0;">LLÁMANOS Y RESERVA</h2>
+            <div class="res-telefono">
+                <i class="fas fa-phone-alt"></i> 965 55 51 11
+            </div>
+            <a href="tel:965700878" class="btn-llamar"><i class="fas fa-phone"></i> Llamar ahora</a>
+            <p class="reserva-nota">Atención telefónica en horario de apertura.<br>Consultar disponibilidad.</p>
+            <p style="margin-top:30px;"><i class="fas fa-clock" style="color:var(--dorado);"></i> Horario: Mar-Jue 10:00-17:00h · Vie-Sáb 10:00-17:00h y 20:30-23:30h</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTO + MAPA -->
+<section id="contacto" class="contacto">
+    <div class="container">
+        <div class="contacto-grid">
+            <div>
+                <span class="seccion-subtitulo">Visítanos</span>
+                <h2 class="seccion-titulo">DÓNDE ENCONTRARNOS</h2>
+                <div style="margin:25px 0"><i class="fas fa-map-marker-alt" style="color:var(--dorado); width:25px;"></i> C. Cam. de Catral, 33, 03160 Almoradí</div>
+                <div><i class="fas fa-clock" style="color:var(--dorado); width:25px;"></i> Mar-Jue 10:00-17:00h · Vie-Sáb 10:00-17:00h y 20:30-23:30h · Dom cerrado · Lunes cerrado</div>
+                <div style="margin:20px 0"><i class="fas fa-phone-alt" style="color:var(--dorado);"></i> 965 55 51 11</div>
+                <div style="display:flex; gap:15px; margin-top:30px">
+                    <a href="#" style="background:var(--dorado); color:white; width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" style="background:var(--dorado); color:white; width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d196.18812830609173!2d-0.7970882281992667!3d38.11670052778282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63a4fcb65f547b%3A0xfec800f54429dcc9!2sRestaurante%20Angel%C3%ADn!5e0!3m2!1ses!2ses!4v1771614235211!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-principal">
+            <div class="footer-logo"><img src="https://placecats.com/100/100?random=logo" alt="logo"><p style="margin-top:10px;">Cocina tradicional desde 1975</p></div>
+            <div><h4 style="color:white;">Enlaces</h4><ul style="list-style:none"><li><a href="#inicio" style="color:#aaa;">Inicio</a></li><li><a href="#historia" style="color:#aaa;">Historia</a></li><li><a href="#menu-completo" style="color:#aaa;">Menú</a></li></ul></div>
+            <div><h4 style="color:white;">Horario</h4><p>Mar-Jue 10:00-17:00h<br>Vie-Sáb 10:00-17:00h y 20:30-23:30h</div>
+            <div><a href="tel:965700878" class="btn btn-primario">📞 Llamar</a><p style="margin-top:10px;">965 55 51 11</p></div>
+            <div></div><img class="qr" src="images/qrcode_smartmenu.agorapos.com.png" alt="qr"></div></div>
+        </div>
+        <div style="text-align:center; border-top:1px solid #333; padding-top:20px;">© 2025 Restaurante Angelín · Reserva solo telefónica</div>
+        
+    </div>
+</footer>
+
+<!-- BOTÓN FLOTANTE (llamada directa) -->
+<a href="tel:965700878" class="btn-flotante"><i class="fas fa-phone"></i> Reserva llamando</a>
+
+<!-- Script para resaltar submenú al hacer scroll (opcional, mejora UX) -->
+<script>
+    document.querySelector('.menu-hamburguesa')?.addEventListener('click', ()=>{
+        alert('Menú desplegable (versión móvil). En la web final se implementa con JS.');
+    });
+
+    // resaltar enlace del submenú según sección visible (simple)
+    window.addEventListener('scroll', function() {
+        const secciones = document.querySelectorAll('.carta-categoria');
+        const links = document.querySelectorAll('.submenu-link');
+        let current = '';
+        secciones.forEach(sec => {
+            const top = sec.offsetTop - 160;
+            if (pageYOffset >= top) {
+                current = sec.getAttribute('id');
+            }
+        });
+        links.forEach(link => {
+            link.classList.remove('activo');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('activo');
+            }
+        });
+    });
+</script>
+</body>
+</html>
