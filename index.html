@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>Bar Restaurante Angelín · Tradición desde 1975</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -46,8 +46,8 @@
     <!-- HERO -->
     <section id="inicio" class="hero">
         <div class="hero-contenido fade-in">
-            <span class="hero-antetitulo">Desde 1975 en Almoradí</span>
-            <h1 class="hero-titulo">51 años cocinando <span>con el corazón</span></h1>
+            <span class="hero-antetitulo">Desde 1972 en Almoradí</span>
+            <h1 class="hero-titulo">54 años cocinando <span>con el corazón</span></h1>
             <p class="hero-subtitulo">El sabor de siempre, para los momentos que importan</p>
             
             <div class="hero-botones">
@@ -57,7 +57,6 @@
         </div>
     </section>
 
-    
     <!-- COCINA -->
     <section id="cocina" class="cocina">
         <div class="container">
@@ -68,35 +67,34 @@
             <div class="cocina-grid">
                 <div class="cocina-card fade-in delay-1">
                     <div class="cocina-imagen-container">
-                        <img class="cocina-imagen" src="images/paella.jpeg" alt="Arroz">
+                        <a href="#arroces"><img class="cocina-imagen" src="images/paella.jpeg" alt="Arroz"></a>
                     </div>
                     <h3>Arroces de la Vega</h3>
-                    <p>Melosos y socarrados, a la leña.</p>
+                    <p>Melosos y socarrados.</p>
                 </div>
                 <div class="cocina-card fade-in delay-2">
                     <div class="cocina-imagen-container">
-                        <img class="cocina-imagen" src="images/alcachofareco2.png" alt="Alcachofas">
+                       <a href="#entrantes"> <img class="cocina-imagen" src="images/alcachofareco2.png" alt="Alcachofas"></a>
                     </div>
-                    <h3>Alcachofas</h3>
+                    <h3 href="#entrantes">Alcachofas</h3>
                     <p>Tesoro de temporada.</p>
                 </div>
                 <div class="cocina-card fade-in delay-3">
                     <div class="cocina-imagen-container">
-                        <img class="cocina-imagen" src="images/pescado.jpeg" alt="Pescado">
+                        <a href="#pescados"><img class="cocina-imagen" src="images/pescado.jpeg" alt="Pescado"></a>
                     </div>
-                    <h3>Pescados</h3>
+                    <h3 href="#pescados">Pescados</h3>
                     <p>Frescura del Mediterráneo.</p>
                 </div>
                 <div class="cocina-card fade-in delay-4">
                     <div class="cocina-imagen-container">
-                        <img class="cocina-imagen" src="images/chuleton.jpeg" alt="Carne">
+                        <a href="#carnes"><img class="cocina-imagen" src="images/chuleton.jpeg" alt="Carne"></a>
                     </div>
-                    <h3>Carnes a la brasa</h3>
+                    <h3 href="#carnes"> Carnes</h3>
                     <p>Sabor tradicional.</p>
                 </div>
             </div>
         </div>
-       
         <p class="atmosfera-frase fade-in">"Un hogar lejos de casa, donde la buena mesa y la compañía se encuentran"</p>
     </section>
 
@@ -106,10 +104,10 @@
             <div class="historia-grid">
                 <div class="historia-contenido slide-left">
                     <span class="seccion-subtitulo">Nuestra historia</span>
-                    <h2 class="seccion-titulo">MÁS DE 51 AÑOS DE TRADICIÓN</h2>
-                    <p>Desde 1975, la familia Angelín abre sus puertas en Almoradí con un solo objetivo: ofrecer la mejor cocina casera de la región. Producto fresco de la huerta y el mar, recetas transmitidas y un servicio familiar.</p>
-                    <h2 class="seccion-titulo">NUESTROS ORÍGENES: 1965</h2>
-                    <p>Nuestra historia comenzó en 1965 como una pequeña tienda de comestibles, granos y vinos. Con esfuerzo y dedicación, nos convertimos en un comercio de confianza para el barrio, ofreciendo productos seleccionados y atención personalizada. Ese espíritu de cercanía y compromiso con la calidad sigue siendo, hoy en día, la base de todo lo que hacemos.</p>
+                    <h2 class="seccion-titulo">MÁS DE 50 AÑOS DE TRADICIÓN</h2>
+                    <p>Desde 1972, la familia Angelín abre sus puertas en Almoradí con un solo objetivo: ofrecer la mejor cocina casera de la región. Producto fresco de la huerta y el mar, recetas transmitidas y un servicio familiar.</p>
+                    <h2 class="seccion-titulo">NUESTROS ORÍGENES: 1960</h2>
+                    <p>Nuestra historia comenzó en 1965 de la mano de Ángel Zambudio y Ángeles Berna, como una pequeña tienda de comestibles, granos y vinos. Con esfuerzo y dedicación, lograron convertir aquel local en un comercio de confianza para el barrio, destacando por sus productos seleccionados y una atención personalizada.</p>
                 </div>
                 <div class="historia-imagen slide-right">
                     <img src="images/Antiguobar.png" alt="familia">
@@ -143,22 +141,21 @@
             <!-- ESTADÍSTICAS CON ANIMACIÓN -->
             <div class="stats-container fade-in">
                 <div class="stat-item">
-                    <span class="stat-numero">+50</span>
+                    <span class="stat-numero" id="stat-platos" data-target="30">0</span>
                     <span class="stat-texto">platos</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-numero">+50</span>
+                    <span class="stat-numero" id="stat-anios" data-target="54">0</span>
                     <span class="stat-texto">años de experiencia</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-numero">160</span>
+                    <span class="stat-numero" id="stat-capacidad" data-target="160">0</span>
                     <span class="stat-texto">Capacidad</span>
                 </div>
             </div>
-            
-            
         </div>
     </section>
+
     <!-- MENÚ COMPLETO -->
     <section id="menu-completo" class="menu-completo">
         <div class="container">
@@ -261,17 +258,19 @@
             <div class="testimonios-grid">
                 <div class="testimonio-card fade-in delay-1">
                     <div class="testimonio-estrellas">★★★★★</div>
-                    <p>"El servicio inmejorable, la leche frita espectacular."</p>
-                    <strong>María G.</strong>
+                    <p>"Un lugar excelente para degustar la comida de la vega baja.
+La atención de los camareros excepcional sobre todo un chico cubano que fue muy amable."</p>
+                    <strong>Rosa</strong>
                 </div>
                 <div class="testimonio-card fade-in delay-2">
                     <div class="testimonio-estrellas">★★★★★</div>
-                    <p>"Un clásico en Almoradí, el arroz siempre perfecto."</p>
-                    <strong>Carlos R.</strong>
+                    <p>Esta vez fuimos a la barra. La comida de lujo, la atención inmejorable. Para puntualizar un poco más. El entrecot muy bueno y muy bien hecho. El precio de los vinos asequible. Calamares, albóndigas de bacalao, no puedo poner ni un pero. 100 recomendable</p>
+                    <strong>Alejandro</strong>
                 </div>
                 <div class="testimonio-card fade-in delay-3">
                     <div class="testimonio-estrellas">★★★★</div>
-                    <p>"Cenamos de lujo, el entrecot de 10."</p>
+                    <p>Mucha calidad, gran servicio y atención. Reunión de amigos en ambiente futbolero.
+Absolutamente recomendable.</p>
                     <strong>Ana L.</strong>
                 </div>
             </div>
@@ -279,34 +278,34 @@
     </section>
 
     <!-- GALERÍA -->
-<section class="galeria">
-    <div class="container">
-        <div class="fade-in" style="text-align:center; margin-bottom:40px;">
-            <span class="seccion-subtitulo">Galería</span>
-            <h2 class="seccion-titulo">MOMENTOS ANGELÍN</h2>
+    <section class="galeria">
+        <div class="container">
+            <div class="fade-in" style="text-align:center; margin-bottom:40px;">
+                <span class="seccion-subtitulo">Galería</span>
+                <h2 class="seccion-titulo">COMIDAS ANGELÍN</h2>
+            </div>
+            <div class="galeria-grid">
+                <div class="galeria-item zoom-in delay-1">
+                    <img src="images/jamon.jpeg" alt="Jamón">
+                </div>
+                <div class="galeria-item zoom-in delay-2">
+                    <img src="images/IlustraciónLogo2.png" alt="Logo Angelín">
+                </div>
+                <div class="galeria-item zoom-in delay-3">
+                    <img src="images/pulpo.jpg" alt="Pulpo">
+                </div>
+                <div class="galeria-item zoom-in delay-4">
+                    <img src="images/gamba.jpg" alt="gamba">
+                </div>
+                <div class="galeria-item zoom-in delay-5">
+                    <img src="images/WhatsApp_Image_2026-02-21_at_21.48.14_2.jpeg" alt="Alcachofa 3">
+                </div>
+                <div class="galeria-item zoom-in delay-6">
+                    <img src="images/alcachofarellena.jpeg" alt="Alcachofa rellena">
+                </div>
+            </div>
         </div>
-        <div class="galeria-grid">
-            <div class="galeria-item zoom-in delay-1">
-                <img src="images/jamon.jpeg" alt="Jamón">
-            </div>
-            <div class="galeria-item zoom-in delay-2">
-                <img src="images/IlustraciónLogo2.png" alt="Logo Angelín">
-            </div>
-            <div class="galeria-item zoom-in delay-3">
-                <img src="images/pulpo.jpg" alt="Pulpo">
-            </div>
-            <div class="galeria-item zoom-in delay-4">
-                <img src="images/gamba.jpg" alt="gamba">
-            </div>
-            <div class="galeria-item zoom-in delay-5">
-                <img src="images/WhatsApp_Image_2026-02-21_at_21.48.14_2.jpeg" alt="Alcachofa 3">
-            </div>
-             <div class="galeria-item zoom-in delay-6">
-                <img src="images/alcachofarellena.jpeg" alt="Alcachofa rellena">
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- RESERVA -->
     <section id="reserva" class="reserva">
@@ -331,15 +330,28 @@
                 <div class="slide-left">
                     <span class="seccion-subtitulo">Visítanos</span>
                     <h2 class="seccion-titulo">DÓNDE ENCONTRARNOS</h2>
-                    <div style="margin:25px 0"><i class="fas fa-map-marker-alt" style="color:var(--dorado);"></i> C. Cam. de Catral, 33, 03160 Almoradí</div>
-                    <div><i class="fas fa-clock" style="color:var(--dorado);"></i> Mar-Jue 10:00-17:00h · Vie-Sáb 10:00-17:00h y 20:30-23:30h · Dom cerrado · Lunes cerrado</div>
-                    <div style="margin:20px 0"><i class="fas fa-phone-alt" style="color:var(--dorado);"></i> 965 70 08 78</div>
+                    <div style="margin:25px 0; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-map-marker-alt" style="color:var(--dorado);"></i>
+                        <span>C. Cam. de Catral, 33, 03160 Almoradí</span>
+                    </div>
+                    <div style="margin:20px 0; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-clock" style="color:var(--dorado);"></i>
+                        <span>Mar-Jue 10:00-17:00h · Vie-Sáb 10:00-17:00h y 20:30-23:30h · Dom cerrado · Lunes cerrado</span>
+                    </div>
+                    <div style="margin:20px 0; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-phone-alt" style="color:var(--dorado);"></i>
+                        <a href="tel:965700878" style="color:var(--texto); text-decoration: none;">965 70 08 78</a>
+                    </div>
                     <div style="display:flex; gap:15px; margin-top:30px">
-                        <a href="#" style="background:var(--dorado); color:white; width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" style="background:var(--dorado); color:white; width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/p/BAR-Restaurante-Angelin-100063507461143/?locale=es_ES" style="background:var(--dorado); color:white; width:45px; height:45px; border-radius:50%; display:flex; align-items:center; justify-content:center; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/barrestauranteangelin/" style="background:var(--dorado); color:white; width:45px; height:45px; border-radius:50%; display:flex; align-items:center; justify-content:center; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
-                <iframe class="zoom-in" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d196.18812830609173!2d-0.7970882281992667!3d38.11670052778282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63a4fcb65f547b%3A0xfec800f54429dcc9!2sRestaurante%20Angel%C3%ADn!5e0!3m2!1ses!2ses!4v1771614235211!5m2!1ses!2ses" width="100%" height="350" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe class="zoom-in" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d196.18812830609173!2d-0.7970882281992667!3d38.11670052778282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63a4fcb65f547b%3A0xfec800f54429dcc9!2sRestaurante%20Angel%C3%ADn!5e0!3m2!1ses!2ses!4v1771614235211!5m2!1ses!2ses" width="100%" height="100%" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
@@ -349,8 +361,8 @@
         <div class="container">
             <div class="footer-principal">
                 <div class="footer-logo">
-                    <img src="https://placecats.com/100/100?random=logo" alt="logo">
-                    <p style="margin-top:10px;">Cocina tradicional desde 1975</p>
+                    <a href="#inicio"><img src="images/IlustraciónLogo2.png" alt="logo"></a>
+                    <p style="margin-top:10px;">Cocina tradicional desde 1972</p>
                 </div>
                 <div>
                     <h4 style="color:white;">Enlaces</h4>
@@ -367,10 +379,10 @@
                 <div>
                     <a href="tel:965700878" class="btn btn-primario">📞 Llamar</a>
                     <p style="margin-top:10px;">965 70 08 78</p>
-                    <img class="qr" src="images/qrcode_smartmenu.agorapos.com.png" alt="qr">
+                    <a href="https://smartmenu.agorapos.com/?id=7ppprkl5#/"><img class="qr" src="images/qrcode_smartmenu.agorapos.com.png" alt="qr"></a>
                 </div>
             </div>
-            <div style="text-align:center; border-top:1px solid #333; padding-top:20px;">© 2025 Restaurante Angelín · Reserva solo telefónica</div>
+            <div style="text-align:center; border-top:1px solid #333; padding-top:20px;">© 2025 Bar Restaurante Angelín · Reserva solo telefónica</div>
         </div>
     </footer>
 
@@ -379,6 +391,69 @@
 
     <!-- SCRIPTS -->
     <script>
+        // ===== CONTADORES ANIMADOS =====
+        function animateCounter(element, start, end, duration) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                
+                // Efecto de aceleración y desaceleración
+                const easeProgress = 1 - Math.pow(1 - progress, 3);
+                
+                // Añadir efecto aleatorio al principio
+                let currentValue;
+                if (progress < 0.3) {
+                    const randomRange = Math.floor(Math.random() * end);
+                    currentValue = Math.floor(randomRange);
+                } else {
+                    currentValue = Math.floor(easeProgress * end);
+                }
+                
+                element.innerText = currentValue;
+                
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                } else {
+                    element.innerText = end; // Asegurar número final exacto
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        // Función para iniciar contadores cuando sean visibles
+        function startCountersIfVisible() {
+            const contadorPlatos = document.getElementById('stat-platos');
+            const contadorAnios = document.getElementById('stat-anios');
+            const contadorCapacidad = document.getElementById('stat-capacidad');
+            
+            if (!contadorPlatos || !contadorAnios || !contadorCapacidad) return;
+            
+            // Verificar si ya fueron animados
+            if (contadorPlatos.getAttribute('data-animado') === 'true') return;
+            
+            const rect = contadorPlatos.parentElement.parentElement.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+            
+            // Si la sección de estadísticas es visible
+            if (rect.top < windowHeight - 100) {
+                // Obtener valores objetivo
+                const targetPlatos = parseInt(contadorPlatos.getAttribute('data-target'));
+                const targetAnios = parseInt(contadorAnios.getAttribute('data-target'));
+                const targetCapacidad = parseInt(contadorCapacidad.getAttribute('data-target'));
+                
+                // Animar cada contador
+                animateCounter(contadorPlatos, 0, targetPlatos, 2000);
+                animateCounter(contadorAnios, 0, targetAnios, 2200);
+                animateCounter(contadorCapacidad, 0, targetCapacidad, 1800);
+                
+                // Marcar como animados
+                contadorPlatos.setAttribute('data-animado', 'true');
+                contadorAnios.setAttribute('data-animado', 'true');
+                contadorCapacidad.setAttribute('data-animado', 'true');
+            }
+        }
+
         // ===== MENÚ HAMBURGUESA FUNCIONAL =====
         document.addEventListener('DOMContentLoaded', function() {
             const menuHamburguesa = document.getElementById('menu-hamburguesa');
@@ -434,6 +509,9 @@
                     document.body.style.overflow = '';
                 }
             });
+
+            // Iniciar contadores si son visibles al cargar
+            setTimeout(startCountersIfVisible, 500);
         });
 
         // ===== ANIMACIONES AL HACER SCROLL =====
@@ -450,6 +528,9 @@
                     element.classList.add('visible');
                 }
             });
+            
+            // También verificar contadores al hacer scroll
+            startCountersIfVisible();
         }
 
         window.addEventListener('load', checkVisibility);
