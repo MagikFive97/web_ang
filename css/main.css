@@ -4,7 +4,9 @@
     padding: 0; 
     box-sizing: border-box; 
 }
-
+html {
+    overflow-y: scroll;
+}
 :root {
     --dorado: #8A623E;
     --dorado-oscuro: #7A5536;
